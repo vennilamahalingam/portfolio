@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vennila Portfolio</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./assets/header-bg-color.png" alt="" class="w-full" />
+    </div>
+
+    <nav id="navbar" class="w-full fixed px-5 flex justify-center lg:px-8 xl:px-[8%] py-4 flex items-center z-50">
+        
+        
+
+        <ul id="navLink"
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent ">
+            
+            <li><a target='_blank' href="https://github.com/vennilamahalingam" onclick="closeMenu()">GitHub</a></li>
+            <li><a target='_blank' href="https://www.upwork.com/freelancers/~01318b5cbdb8607191" onclick="closeMenu()">Upwork Profile</a></li>
+            <li><a target='_blank' href="https://www.linkedin.com/in/vennila-mahalingam-590b51135/" onclick="closeMenu()">LinkedIn</a></li>
+            <li><a  href="#contact" onclick="closeMenu()">Contact me</a></li>
+        </ul>
+
+        <!-- ----- mobile menu ------ -->
+       
+    </nav>
+
+    <!-- ----- home section ------ -->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./assets/profile-img.jpeg" alt="" class="rounded-full w-32" />
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+            Hi! I&apos;m Vennila
+            <!-- <img src="./assets/hand-icon.png" alt="" class="w-6 mb-1" /> -->
+        </h3>
+        <h1 class="text-3xl font-Ovo">Full stack developer with 8 years of Web Development experience</h1>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact"
+                class="px-10 py-2.5 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
+                contact me <img src="./assets/right-arrow-white.png" alt="" class="w-4" />
+            </a>
+
+            <a target='_blank' href="./assets/VennilaMahalingam_Resume.pdf" download
+                class="px-10 py-2.5 rounded-full border border-gray-300 dark:border-white/25 hover:bg-slate-100/70 dark:hover:bg-darkHover flex items-center gap-2 bg-white dark:bg-transparent dark:text-white">
+                my resume <img src="./assets/download-icon.png" alt="" class="w-4 dark:invert" />
+            </a>
+        </div>
+    </div>
+
+    <!-- ----- about me section ------ -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center text-5xl font-Ovo">About me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center my-20">
+           
+            <div class="">
+                <p class="mb-10 font-Ovo">Full Stack Developer with 8 years of professional experience building and deploying web applications end-to-end. Strong expertise in React, JavaScript, and Express.js. Experienced in taking complete ownership from product design and development to deployment and production support. Known for strong problem-solving skills, clean code, and delivering scalable, user-focused solutions.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 ">
+                    <li
+                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                       
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">FrontEnd Skills</h3>
+                        <p class="text-gray-600 text-base dark:text-white/80"> React.Js, Next.Js, HTML, CSS, Tailwind css, JavaScript, JQuery,</p>
+                    </li>
+                    <li
+                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                       
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Backend Skills</h3>
+                        <p class="text-gray-600 text-base dark:text-white/80">Node.js, Express.js, MongoDB, Postgres, Prisma</p>
+                    </li>
+                    <li
+                        class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
+                       
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Tools</h3>
+                        <p class="text-gray-600 text-base dark:text-white/80">AWS Cognito, AWS Lambda, API Gateway, AWS Amplify, AWS SES, AWS CloudWatch, Google Analytics, Stripe Integration, SendGrid, Open AI API</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Work Section -->
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h2 class="text-center text-5xl font-Ovo">My Latest Projects</h2>
+        <a href="http://quickcasereview.com" target="_blank" class="cursor-pointer">
+        <div class="flex flex-col w-full dark:text-black border mt-4">
+            <img class="w-[200px] h-[300px]"
+                src='./assets/project1.png'>
+            </img>
+            <div
+                    class="w-full bg-gray-200 mt-10 border p-4 flex items-center gap-10 justify-center py-4">
+                    <div>
+                        <h2 class="font-semibold">Full Stack Legal Services Project</h2>
+                        <p class="text-sm text-gray-700">Lead Developer</p>
+                    </div>
+                    <div
+                        class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./assets/send-icon.png" alt="" class="w-5">
+                    </div>
+                </div>
+        </div>
+        </a>
+    </div>
+
+    <!-- Contact me section -->
+    <div id="contact"
+        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./assets/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
+               <div class="w-max flex items-center gap-2 mx-auto">
+                07094054614
+               </div>
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="./assets/mail_icon.png" alt="" class="w-5 dark:hidden">
+                <img src="./assets/mail_icon_dark.png" alt="" class="w-5 hidden dark:block">
+                <a href="#!">vennilamahalingam.vm@gmail.com</a>
+            </div>
+        
+        
+    </div>
+
+  
+  
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
